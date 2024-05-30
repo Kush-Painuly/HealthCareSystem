@@ -1,0 +1,114 @@
+* {
+  margin: 0 px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0px 800px 20px 0px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  background-image: url("../images/registrationphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  padding: 2px 0;
+  color: #007bff;
+}
+
+h1.infohead{
+  text-align: center;
+  padding: 2px 0;
+  color: #fff;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#password-strength {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.field{
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#doctor_fields {
+  display: none;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 34%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.exisiting {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.exisiting h2 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.exisiting a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+p.infopara{
+  text-align: center;
+  padding: 30px 0;
+  color: #fff;
+  font-size: 18px;
+}

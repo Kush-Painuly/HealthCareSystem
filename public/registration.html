@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="../css/regiit.css">
+
+</head>
+
+<body>
+  <div class="information">
+    <h1 class="infohead">Be a Part of our Family!</h1>
+  </div>
+  <h1>Registration Form</h1>
+
+  <form action="/register" method="POST">
+    <fieldset class="field">
+      <div class="form-group">
+        <label for="user_type">User Type:</label>
+        <select id="user_type" name="user_type" required>
+          <option value="none"></option>
+          <option value="patient">Patient</option>
+          <option value="doctor">Doctor</option>
+          <option value="guest">Guest</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" First Name="First Name" required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" Last Name="Last Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" pattern="[a-zA-Z]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span id="password-strength"></span>
+      </div>
+      <div class="form-group">
+        <label for="birthdate">Birthdate</label>
+        <input type="Date" id="birth" name="Birthdate" required>
+      </div>
+      <div class="form-group2">
+        <label for="Blood_Group">Blood-Group</label>
+        <select id="bg">
+          <option value="none"></option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+      </div><br />
+      <div  id="doctor_fields" style="display:none;">
+        <input type="text" name="specialization" placeholder="Specialization"><br><br>
+        <input type="text" name="experience" placeholder="Experience"><br><br>
+      </div>
+      <button type="submit" id="btt">Register</button>
+
+      <div class="exisiting">
+        <h2>Already Registered ?</h2>
+        <a href="./login.html">Login</a>
+      </div>
+
+    </fieldset>
+  </form>
+  <div class="information">
+    <p class="infopara"><i>" All doctors treat, but a good doctor lets nature heal. "</i></p>
+  </div>
+  <script src="../src/register.js"></script>
+</body>
+
+</html>

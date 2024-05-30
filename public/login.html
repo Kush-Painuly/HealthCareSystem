@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+  <div class="information">
+    <h1 class="infohead">Just one Step !</h1>
+  </div>
+  <h1> Login Form</h1>
+  <form action="./login" method="post">
+    <fieldset class="field">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <span id="password-match-message"></span>
+      </div>
+
+      <button type="submit" id="btt">Login</button>
+    </fieldset>
+  </form>
+  <div class="information">
+    <p class="infopara"><i>“As a caregiver, you see selfless acts everyday.”</i></p>
+  </div>
+  <script src="../src/login.js"></script>
+</body>
+
+</html>
